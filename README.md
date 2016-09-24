@@ -50,6 +50,9 @@ distinct-code -  csci3055u-a1.txt
 ### (defn time-earliest-latest
 
 ```bash
+make time-earliest-latest
+Earliest start time is:  810
+Latest end time is:  2130
 ```
 
 ### (defn pr-schedule
