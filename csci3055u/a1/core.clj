@@ -20,7 +20,7 @@
 
 	;; YOUR CODE GOES HERE
 
-)
+) ;; end defn read-file
 
 
 (defn distinct-code 
