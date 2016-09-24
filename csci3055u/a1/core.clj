@@ -1,6 +1,7 @@
 (ns csci3055u.a1.core
 	(use clojure.java.io)
-	(use [clojure.string :only (split join)]))
+	(use [clojure.string :only (split join)])
+	(use [clojure.set :only (select)]))
 
 ;; Name: 
 ;; Student Number: 100******
