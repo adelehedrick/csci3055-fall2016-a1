@@ -57,7 +57,22 @@ Latest end time is:  2130
 
 ### (defn pr-schedule
 
+With my makefile settings as:
+```make
+pr-schedule:
+	@$(run_clj) pr-schedule $(txt) { :code \"CSCI 3055U\" }
+```
+
+Terminal:
 ```bash
+make pr-schedule
+pr-schedule -  csci3055u-a1.txt   CSCI 3055U   nil   nil   nil   nil
+```
+
+Output schedule.txt
+```
+T 12:40-14:0 - CSCI 3055U - Programming Languages - University Building A1 UA2240
+R 11:10-12:30 - CSCI 3055U - Programming Languages - University Building A1 UA2240
 ```
 
 ### (defn free-room 

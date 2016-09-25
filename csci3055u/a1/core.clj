@@ -55,9 +55,9 @@
 
 (defn pr-schedule 
 	"This time you are going to write to a file. All of these keys are optional. The ones that are set will be used as filters on the data. Any key that is not set needs to be included in the output. Example: if I provide the :code then the data is filtered to print the title, room, weekday and time to the text-file 'schedule.txt' that all have the code defined by :code"
-	[filename {:keys [code title room weekday time]}]
+	[filename {:keys [code title room weekday time_] :or { code nil title nil room nil weekday nil time_ nil } } ]
 
-	(println "pr-schedule - " filename " " code " " title " " room " " weekday " " time)
+	(println "pr-schedule - " filename " " code " " title " " room " " weekday " " time_)
 
 	;; reminder: the file you print to must be 'schedule.txt'
 
@@ -68,9 +68,9 @@
 
 (defn free-room 
 	"For this one, you need to find all the times that rooms are free, filter the data based on the :keys and output results to the console. Example: If I provide the keys :weekday and :time then I want a print out of the weekday, time and room (e.g. R - 8:10 to 11:40 - University Building A1 UA2240) for every segment that matches the :weekday and :time."
-	[filename {:keys [weekday time room]}]
+	[filename {:keys [ weekday time_ room ] :or { weekday nil time_ nil room nil} } ]
 
-	(println "free-room - " filename " " room " " weekday " " time)
+	(println "free-room - " filename " " room " " weekday " " time_)
 
 	;; YOUR CODE GOES HERE
 
