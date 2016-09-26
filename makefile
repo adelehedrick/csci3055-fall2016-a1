@@ -21,6 +21,7 @@ time-earliest-latest:
 
 
 # example parameters
+# :code \"CSCI 3055U\"
 #	:title \"Programming Languages\" 
 #	:room  \"University Building A1 UA2240\" 
 #	:weekday \"R\" 

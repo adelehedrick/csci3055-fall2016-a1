@@ -77,7 +77,19 @@ R 11:10-12:30 - CSCI 3055U - Programming Languages - University Building A1 UA22
 
 ### (defn free-room 
 
+With my makefile settings as:
+```make
+free-room:
+	@$(run_clj) free-room $(txt) {  :weekday \"R\" :room  \"University Building A1 UA2240\"  }
+```
+
+Terminal:
 ```bash
+make free-room
+free-room -  csci3055u-a1.txt   University Building A1 UA2240   R   nil
+R 11:0-11:10 - University Building A1 UA2240
+R 12:30-14:10 - University Building A1 UA2240
+R 17:0-18:40 - University Building A1 UA2240
 ```
 
 ## Some Helpful Resources *hint hint*
