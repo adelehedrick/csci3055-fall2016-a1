@@ -2,7 +2,7 @@
 
 Your task is to go to the csci3055u/a1/core.clj and fill in the function bodies.
 
-A makefile has been provided that is all set to execute the functions int he core.clj. You simply need to execute `make <function name>` in terminal at the base of the project directory. Feel free to modify the arguments to test different operations.
+A makefile has been provided that is all set to execute the functions in the core.clj. You simply need to execute `make <function name>` in terminal at the base of the project directory. Feel free to modify the arguments to test different operations.
 
 The csci3055u-a1.txt contains the current course listings for this semester. You will be using this file a lot for this assignment. 
 
