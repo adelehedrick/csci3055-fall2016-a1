@@ -42,11 +42,6 @@ distinct-code -  csci3055u-a1.txt
 #{NURS 0420U EDUC 3210U ENGR 3260U SSCI 4099U NUCL 4510U AEDT 3120U COMM 1420U CHEM 3530U SSCI 2020U PSYC 2060U COMM 2210U INFR 4320U PHY 4020U NUCL 5060G CSCI 4110U MANE 4280U INFR 3495U COMM 3410U BUSI 3930U SSCI 2031U ENGR 3750U HLSC 2825U HLSC 1200U PSYC 1000U BUSI 2603U MATH 3030U MECE 4410U ENGR 3200U INFR 2395U COMM 2530U MCSC 6000G MATH 1000U BUSI 2620U NURS 2701U SSCI 6920G BUSI 3350U MECE 2640U CSCI 1040U INFR 3120U MECE 4210U MATH 1010U HLSC 5322G BIOL 1010U NURS 3400U SOFE 2800U CHEM 4050U PSYC 5510G INFR 4310U BUSI 3040U BUSI 4701U SSCI 1910U...
 ```
 
-### (defn distinct-code-with-labs...
-
-```bash
-```
-
 ### (defn time-earliest-latest
 
 ```bash
@@ -92,5 +87,6 @@ R 12:30-14:10 - University Building A1 UA2240
 R 17:0-18:40 - University Building A1 UA2240
 ```
 
-## Some Helpful Resources *hint hint*
+## Some Helpful Resources 
 
+The [Clojure Cheatsheet](http://clojure.org/api/cheatsheet) is a must have resource that you will need open at all times while programming in Clojure.

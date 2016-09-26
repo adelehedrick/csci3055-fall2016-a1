@@ -35,16 +35,6 @@
 ) ;; end defn distinct-code
 
 
-(defn distinct-code-with-labs 
-	"Similar to the previous function, but now I want you to output to the console the unique course codes that have labs."
-	[filename]
-
-	(println "distinct-code-with-labs - " filename)
-
-	;; YOUR CODE GOES HERE
-
-) ;; end defn distinct-code-with-labs
-
 (defn time-earliest-latest
 	"Read in the file, and output the earliest start time, and the latest end time."
 	[filename]
