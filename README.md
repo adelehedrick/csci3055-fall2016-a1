@@ -4,6 +4,21 @@ Your task is to go to the csci3055u/a1/core.clj and fill in the function bodies.
 
 A makefile has been provided that is all set to execute the functions int he core.clj. You simply need to execute `make <function name>` in terminal at the base of the project directory. Feel free to modify the arguments to test different operations.
 
+The csci3055u-a1.txt contains the current course listings for this semester. You will be using this file a lot for this assignment. 
+
+First three lines of the file are:
+```
+201609|Foun.of Ditgl Teach & Lrn Tech|AEDT 1120U|12|M|10|13|0|Virtual ONLINE11
+201609|Foun.of Ditgl Teach & Lrn Tech|AEDT 1120U|18|M|10|19|0|Virtual ONLINE9
+201609|Digital Commun. Technologies|AEDT 1160U|12|M|10|13|0|Virtual ONLINE10
+```
+
+As you can see each row represents each time and place that a course is scheduled for. If a course has more than one lecture/lab/tutorial, then it will have multiple rows with each row having a different time and possibly room. The columns data go by:
+
+<Semester>|<Title>|<Code>|<Start-Hour>|<Day>|<Start-Minute>|<End-Hour>|<End-Minute>|<Room> 
+
+The character used to separate the columns is the vertical bar "\|".
+
 ## Step 1. Include Your Name
 
 Near the top of the *csci3055u/a1/core.clj* file make sure you put your name and student number in the comments provided:
@@ -86,6 +101,7 @@ R 11:0-11:10 - University Building A1 UA2240
 R 12:30-14:10 - University Building A1 UA2240
 R 17:0-18:40 - University Building A1 UA2240
 ```
+
 
 ## Some Helpful Resources 
 
