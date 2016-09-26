@@ -44,7 +44,7 @@
 ) ;; end defn time-earliest-latest
 
 (defn pr-schedule 
-	"This time you are going to write to a file. All of these keys are optional. The ones that are set will be used as filters on the data. Any key that is not set needs to be included in the output. Example: if I provide the :code then the data is filtered to print the title, room, weekday and time to the text-file 'schedule.txt' that all have the code defined by :code"
+	"This time you are going to write to a file. All of these keys are optional. The ones that are set will be used as filters on the data. You need to output the day, start time, end time, code, title and location, with each record on its own line."
 	[filename {:keys [code title room weekday time_] :or { code nil title nil room nil weekday nil time_ nil } } ]
 
 	(println "pr-schedule - " filename " " code " " title " " room " " weekday " " time_)
@@ -67,7 +67,7 @@
 ) ;; end defn free-room
 
 (defn -main 
-	"Do not modify the main method! It will break your assignment!"
+	"Do not modify the main method! It will break the makefile and your assignment!"
 	[fun-name file-name & args]
 	(if (empty? args)
 		((ns-resolve 'csci3055u.a1.core (symbol fun-name)) file-name)	

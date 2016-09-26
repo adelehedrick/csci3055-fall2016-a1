@@ -32,11 +32,17 @@ Near the top of the *csci3055u/a1/core.clj* file make sure you put your name and
 
 You are expected to fill in the function bodies of the functions previously defined in *csci3055u/a1/core.clj* that have `;; YOUR CODE GOES HERE` inside the body.
 
-If you need to add additional functions to your code, please do so in the area indicated near the top of *csci3055u/a1/core.clj*.
+You will need to add additional functions to your code for marks and to make sure your code doesn't smell, please do so in the area indicated near the top of *csci3055u/a1/core.clj*.
 
-## Sample Execution and Output
+## The Functions
 
-### (defn read-file...
+I recommend that you do these functions in order. They are ordered in such a way to help guide you through the skills you need to complete the final function `free-rooms` at the end. 
+
+### read-file
+
+This is a warm-up! Simply read the contents of the file associated to the argument 'filename' and print the contents to the console.
+
+#### Sample Execution
 
 ```bash
 make read-file
@@ -49,7 +55,11 @@ read-file -  csci3055u-a1.txt
 ...way more output
 ```
 
-### (defn distinct-code...
+### distinct-code
+
+Output to the console the unique course codes found in the file 'filename'
+
+#### Sample Execution
 
 ```bash
 make distinct-code
@@ -57,7 +67,11 @@ distinct-code -  csci3055u-a1.txt
 #{NURS 0420U EDUC 3210U ENGR 3260U SSCI 4099U NUCL 4510U AEDT 3120U COMM 1420U CHEM 3530U SSCI 2020U PSYC 2060U COMM 2210U INFR 4320U PHY 4020U NUCL 5060G CSCI 4110U MANE 4280U INFR 3495U COMM 3410U BUSI 3930U SSCI 2031U ENGR 3750U HLSC 2825U HLSC 1200U PSYC 1000U BUSI 2603U MATH 3030U MECE 4410U ENGR 3200U INFR 2395U COMM 2530U MCSC 6000G MATH 1000U BUSI 2620U NURS 2701U SSCI 6920G BUSI 3350U MECE 2640U CSCI 1040U INFR 3120U MECE 4210U MATH 1010U HLSC 5322G BIOL 1010U NURS 3400U SOFE 2800U CHEM 4050U PSYC 5510G INFR 4310U BUSI 3040U BUSI 4701U SSCI 1910U...
 ```
 
-### (defn time-earliest-latest
+### time-earliest-latest
+
+Read in the file, and output the earliest start time, and the latest end time.
+
+#### Sample Execution
 
 ```bash
 make time-earliest-latest
@@ -65,7 +79,11 @@ Earliest start time is:  810
 Latest end time is:  2130
 ```
 
-### (defn pr-schedule
+### pr-schedule
+
+This time you are going to write to a file. All of these keys are optional. The ones that are set will be used as filters on the data. You need to output the day, start time, end time, code, title and location, with each record on its own line.
+
+#### Sample Execution
 
 With my makefile settings as:
 ```make
@@ -85,7 +103,11 @@ T 12:40-14:0 - CSCI 3055U - Programming Languages - University Building A1 UA224
 R 11:10-12:30 - CSCI 3055U - Programming Languages - University Building A1 UA2240
 ```
 
-### (defn free-room 
+### free-room 
+
+For this one, you need to find all the times that rooms are free, filter the data based on the :keys and output results to the console. Example: If I provide the keys :weekday and :time then I want a print out of the weekday, time and room (e.g. R - 8:10 to 11:40 - University Building A1 UA2240) for every segment that matches the :weekday and :time.
+
+#### Sample Execution
 
 With my makefile settings as:
 ```make
