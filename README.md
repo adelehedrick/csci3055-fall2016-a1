@@ -15,9 +15,9 @@ First three lines of the file are:
 
 As you can see each row represents each time and place that a course is scheduled for. If a course has more than one lecture/lab/tutorial, then it will have multiple rows with each row having a different time and possibly room. The columns data go by:
 
-<Semester>|<Title>|<Code>|<Start-Hour>|<Day>|<Start-Minute>|<End-Hour>|<End-Minute>|<Room> 
+Semester|Title|Code|Start-Hour|Day|Start-Minute|End-Hour|End-Minute|Room 
 
-The character used to separate the columns is the vertical bar "\|".
+The character used to separate the columns is the vertical bar `"\|"`.
 
 ## Step 1. Include Your Name
 
